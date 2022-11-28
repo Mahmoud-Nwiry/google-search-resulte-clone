@@ -1,4 +1,4 @@
-/* Global Style */
+/* Global Style |Start| */
 *{
     margin: 0;
     padding: 0;
@@ -25,6 +25,10 @@ li {
 img, svg {
     max-width: 25px;
 }
+
+/* Global Style |Start| */
+
+/* ********************* */
 
 /* Header |Start| */
 
@@ -112,8 +116,6 @@ header .search-area {
     justify-content: space-between;
 }
 
-
-
 header .setting ul {
     display: grid;
     text-align: center;
@@ -151,7 +153,7 @@ header nav ul{
     font-size: 14px;
     color: #969ba1;
     display: grid;
-    grid-template-columns: 10em repeat(5, minmax(40px , auto)) 1fr minmax(100px, auto);
+    grid-template-columns: 8.5em repeat(5, minmax(40px , auto)) 1fr minmax(100px, auto);
 }
 
 header nav ul li{
@@ -163,3 +165,112 @@ header nav ul li:first-child{
 }
 
 /* Header |End| */
+
+/* ********************* */
+
+/* Main |Start| */
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 0 10em ;
+}
+
+main .results {
+    padding-right: 5rem;
+}
+
+main .timeofspeed {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 8px;
+    color: #9aa0a6;
+    font-size: 14px;
+}
+
+main .results .result_item {
+    margin: 5px 0 30px;
+}
+
+main .results .result_item .website {
+    font-size: 14px;
+    color: #bdc1c6;
+    margin-bottom: 3px;
+}
+main .results .result_item .link a {
+    color: #8ab4f8;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.58;
+}
+main .results .result_item .desciption {
+    font-size: 14px;
+    color: #bdc1c6;
+}
+
+main .info {
+    padding-top: 2rem;
+}
+main .info .common_info {
+    border: 1px solid #3c4043;
+    color: #bdc1c6;
+    border-radius: 8px;
+    padding: 0 0 16px 0;
+    line-height: 1.58;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+main .info .common_info img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 150px;
+}
+main .info .common_info h2 {
+    padding: 10px 20px;
+    border-bottom: 1px solid #3c4043;
+    font-size: 30px;
+    font-weight: 400;
+}
+main .info .common_info p {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+main .info .see_also {
+    border: 1px solid #3c4043;
+    color: #bdc1c6;
+    border-radius: 8px;
+    padding: 0;
+    line-height: 1.58;
+    overflow: hidden;
+}
+main .info .see_also .title {
+    border: 1px solid #3c4043;
+    color: #bdc1c6;
+    padding: 16px;
+    font-weight: 400;
+}
+
+main .info .see_also .item  {
+    display: grid;
+    grid-template-columns: 80px auto;
+    align-items: center;
+    column-gap: 20px;
+}
+main .info .see_also .item img {
+    max-width: unset;
+    width: 80px;
+    min-height: 80px;
+}
+main .info .see_also .item h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Main |End| */
+
