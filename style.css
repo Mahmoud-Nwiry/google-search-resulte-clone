@@ -274,3 +274,35 @@ main .info .see_also .item h3 {
 
 /* Main |End| */
 
+/* ********************* */
+
+/* Foote |Start| */
+
+footer {
+    background: #171717;
+}
+
+.country {
+    padding: 15px 10em;
+    border-bottom: 1px solid #3c4043;
+    font-size: 15px;
+    color: #9aa0a6;
+}
+
+.footer_nav {
+    padding: 0 calc(10em - 28px);
+    background: #171717;
+}
+
+.footer_nav ul li {
+    display: inline-block;
+}
+
+.footer_nav ul a {
+    color: #9aa0a6;
+    display: inline-block;
+    padding: 15px;
+    font-size: 15px;
+}
+
+/* Foote |End| */
