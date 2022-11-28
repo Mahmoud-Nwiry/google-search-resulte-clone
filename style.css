@@ -1,0 +1,165 @@
+/* Global Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #202124;
+    color: #fff;
+    display: grid;
+    grid-template-rows: 130px 1fr 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img, svg {
+    max-width: 25px;
+}
+
+/* Header |Start| */
+
+header {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: auto 100px;
+    grid-template-areas: 
+    'search search search search search search search search search search' 
+    'nav nav nav nav nav . . . . .';
+    padding: 10px 30px 0;
+    border-bottom: 1px solid #3c4043;
+}
+
+header .search-area {
+    display: grid;
+    grid-template-columns: 35em auto;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: search;
+}
+
+header .input_bar {
+    display: grid;
+    grid-template-columns: 5rem 38rem;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+header .input_bar .logo {
+    width: 100px;
+}
+header .input_bar .logo img {
+    max-width: 100%;
+}
+
+header .input_bar form {
+    display: grid;
+    grid-template-columns: 1fr 25px 1px repeat(3, minmax(25px, auto));
+    height: 44px;
+    background: #202124;
+    background-color: #303134;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 20px auto;
+    width: 100%;
+    align-items: center;
+    padding: 5px 8px 5px 14px;
+}
+header .input_bar form input {
+    background-color: transparent;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+header .input_bar form i {
+    background-color: transparent;
+    color: #969ba1;
+}
+header .input_bar form span {
+    width: 1px;
+    background-color: #969ba1;
+    height: 100%;
+}
+
+header .input_bar form .microphone {
+    width: 2em;
+    background-color: transparent;
+    margin: 0 10px;
+}
+
+header .input_bar form img {
+    width: 2em;
+    background-color: transparent;
+    margin: 0 10px;
+}
+
+header .input_bar form i:last-child {
+    margin: 0 10px;
+}
+
+header .search-area {
+    display: grid;
+    grid-template-columns: 60rem auto;
+    justify-content: space-between;
+}
+
+
+
+header .setting ul {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 20px;
+}
+
+header .setting ul li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+header .setting ul li svg {
+    max-width: 100%;
+}
+
+header .setting ul li img {
+    max-width: 100%;
+}
+
+header .setting ul li i::before {
+    width: 100%;
+}
+
+header nav{
+    grid-area: nav;
+}
+
+header nav ul{
+    font-size: 14px;
+    color: #969ba1;
+    display: grid;
+    grid-template-columns: 10em repeat(5, minmax(40px , auto)) 1fr minmax(100px, auto);
+}
+
+header nav ul li{
+    padding: 10px 10px 5px;
+}
+
+header nav ul li:first-child{
+    grid-column-start: 2;
+}
+
+/* Header |End| */
